@@ -6,25 +6,22 @@ body, html {
   * {
     box-sizing: border-box;
   }
-  
+  /* Taustakuvat */
   .bg-image {
     height: 90%;
-  
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
   
-  /* Images used */
   .img1 { background-image: url("img/bgi1.JPG"); }
   .img2 { background-image: url("img/bgi2.JPG"); }
   .img3 { background-image: url("img/bgi3.jpg"); }
   .img4 { background-image: url("img/bgi4.jpg"); }
   .img5 { background-image: url("img/bgi5.jpg"); }
   .img6 { background-image: url("img/bgi6.jpg"); }
-
+/* Taustakuvat loppuu */
 
 .topnav{
   display: none;
@@ -61,3 +58,4 @@ body, html {
     top: 40%;
     background-color: gray;
  }
+ /*Pääbanneri Loppuu */

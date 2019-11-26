@@ -78,6 +78,27 @@ body, html {
   right: 2%;
   top:21%;
  }
+ #cart:active{
+  background-color: rgb(139, 139, 139);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ }
  #cart:hover{
    color: orange;
  }
+
+.container{
+  position: relative;
+}
+
+ /*Slideshow*/
+
+.slideshow{
+  position: relative;
+}
+.mySlides{
+  position: relative;
+  margin: 0 auto;
+  height: 550px;
+  width: 100%;
+}

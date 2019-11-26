@@ -7,3 +7,6 @@ function kannykkanavi() {
       x.style.display = "block";
     }
   } 
+function shoppingcart(){
+  
+}

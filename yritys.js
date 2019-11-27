@@ -26,3 +26,12 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
+/*Backgroundimage*/
+var change = $('.x2');
+$(window).on('scroll', function () {
+  var op = $(this).scrollTop();
+  change.css({
+    'opacity': (1 - op / 100)
+  });
+});

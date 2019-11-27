@@ -1,6 +1,7 @@
 body, html {
-    height: 100%;
+    height: 72%;
     margin: 0;
+    background-color: rgb(169, 186, 204);
   }
   
   * {
@@ -8,9 +9,9 @@ body, html {
   }
   /* Taustakuvat */
   .bg-image {
-    height: 90%;
+    width: 100%;
+    height: 80%;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -53,10 +54,21 @@ body, html {
 }
 
  .bannerbottom{
-    height: 70%;
+    height: 60%;
     position: relative;
     top: 40%;
     background-color: gray;
+ }
+
+ .intro{
+   background: -webkit-linear-gradient(white, orange);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-style: italic;
+   margin: 0%;
+   position: relative;
+   top: 10%;
+   left: 40%;
  }
  /*Pääbanneri Loppuu */
  
@@ -73,7 +85,7 @@ body, html {
  #cart{
   border: none;
   background-color: gray;
-  font-size: 2vw;
+  font-size: 1.5vw;
   position: absolute;
   right: 2%;
   top:21%;
@@ -87,10 +99,29 @@ body, html {
    color: orange;
  }
 
-.container{
-  position: relative;
-}
+/*Index*/
 
+
+
+.maincontainer{
+  padding-top: 5%;
+  position: absolute;
+  height: 100vw;
+  background-color: rgba(63, 63, 63, 0.904);
+  width: 80%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+}
+.maincontent{
+  background-color: aliceblue;
+  height: 85%;
+  width: 70%;
+  margin: 0 auto;
+}
+ 
+
+}
  /*Store /slideshow*/
 
 .slideshow{
@@ -99,31 +130,74 @@ body, html {
 .mySlides{
   position: relative;
   margin: 0 auto;
-  height: 550px;
-  width: 100%;
+  height: 40vw;
+  padding-bottom: 2%;
+  width: 60vw;
 }
 
+#slideshowtxt{
+  right: 12%;
+  position: relative;
+  font-size: 2vw;
+}
 
 /*Store/ Content */
 
-.container{
+.storecontainer{
+  position: relative;
   margin: 0 auto;
-  background-color: rgb(85, 85, 85);
-  width: 100%;
-  height: 90vw;
-  display: flex;
-  flex-wrap: wrap;
+  background-image: linear-gradient(to bottom right, rgb(46, 46, 46), rgba(99, 99, 99, 0.801));
+  width: 95%;
+  height: 130vw;
+  top: -2.2%;
+  padding-top: 3%;
 }
 
 .storecontent{
-  background-color: rgb(255, 166, 0);
+  display: flex;
+  background-color: orange;
   margin: 0 auto;
   width: 78%;
-  height: 70%;
+  height: 100%%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-#storeitem{
-  padding: 2%;
+.tuote{
+  background-image: radial-gradient(circle, white, grey);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 40%;
+  text-align: center;
+  font-family: arial;
+  padding-top: 1%;
+  margin: 2%;
+  width: 25%;
+}
+
+#tuotek{
+  width: 50%;
+}
+
+.tuote button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.tuote button:hover {
+  opacity: 0.7;
+}
+
+
+.bottombanner{
+  position: relative;
+  background-color: gray;
   height: 40%;
+  
 }

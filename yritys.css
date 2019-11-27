@@ -105,9 +105,8 @@ body, html {
 
 
 .maincontainer{
-  padding-top: 5%;
   position: absolute;
-  height: 100vw;
+  height: 90vw;
   background-color: rgba(63, 63, 63, 0.904);
   width: 80%;
   left: 10%;

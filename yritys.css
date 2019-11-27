@@ -8,6 +8,7 @@ body, html {
   }
   /* Taustakuvat */
   .bg-image {
+    z-index: -1;
     height: 90%;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +29,8 @@ body, html {
 }
   /* Banner */
 .mainbanner{
-    position: relative;
+    position: sticky; /* jostain syystä 2. kuva puskee bannerin pois, en keksiny ratkaisua vielä */
+    z-index: 1;
     top: 0px;
     width: 100%;
     height: 7vw;
@@ -86,11 +88,6 @@ body, html {
  #cart:hover{
    color: orange;
  }
-
-.container{
-  position: relative;
-}
-
  /*Store /slideshow*/
 
 .slideshow{
@@ -109,10 +106,11 @@ body, html {
 .container{
   margin: 0 auto;
   background-color: rgb(85, 85, 85);
-  width: 100%;
-  height: 90vw;
+  width: 50%;
+  height: 15vw;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .storecontent{

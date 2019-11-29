@@ -29,7 +29,7 @@ body, html {
 }
   /* Banner */
 .mainbanner{
-    position: sticky; /* jostain syystä 2. kuva puskee bannerin pois, en keksiny ratkaisua vielä */
+    position: fixed; /* jostain syystä 2. kuva puskee bannerin pois, en keksiny ratkaisua vielä */
     z-index: 1;
     top: 0px;
     width: 100%;

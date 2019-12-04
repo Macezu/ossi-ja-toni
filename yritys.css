@@ -28,49 +28,65 @@ body, html {
   display: none;
 }
   /* Banner */
-.mainbanner{
-    position: fixed; /* jostain syystä 2. kuva puskee bannerin pois, en keksiny ratkaisua vielä */
-    z-index: 1;
-    top: 0px;
-    width: 100%;
-    height: 7vw;
-    background-color: orange;
+.banner {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 7vw;
+}
+.bannertop {
+  position: relative;
+  height: 60%;
+  background-color: orange;
 }
 
-.navbuttons{
+.bannerbottom {
   position: relative;
-  left: 45%;
-  font-size: 1vw;
-  border-radius: 4px;
+  height: 40%;
+  background-color: gray;
+}
+
+.intro {
+  position: relative;
+  margin: 0 0;
+  width: 50%;
+  text-align: center;
+  float: right;
+  background: -webkit-linear-gradient(white, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+}
+/* navigointi menu tehty listalla!*/
+.nav {
+  list-style-type: none;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+li { /* muuttaa listan horisontaaliseksi */
   float: left;
+}
+.navbutton { /* <a> tagi napit */
+  font-size: larger;
+  display: block;
+  color:orange;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
   background-color: gray;
   border: solid orange;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
-.navbuttons:hover{
+.navbutton:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   background-color: orange;
 }
 
- .bannerbottom{
-    height: 60%;
-    position: relative;
-    top: 40%;
-    background-color: gray;
- }
 
- .intro{
-   background: -webkit-linear-gradient(white, orange);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-style: italic;
-   margin: 0%;
-   position: relative;
-   top: 10%;
-   left: 40%;
- }
  /*Pääbanneri Loppuu */
  
  

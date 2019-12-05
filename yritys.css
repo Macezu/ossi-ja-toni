@@ -27,29 +27,39 @@ body, html {
 .topnav{
   display: none;
 }
-  /* Banner */
+  /* Main Banner */
 .banner {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 7vw;
+  height: 132px;
+  background-color: gray;
 }
 .bannertop {
   position: relative;
-  height: 60%;
+  height: 80px;
   background-color: orange;
+}
+.title { /* sivuston nimi bannerissa*/
+  font-size: large;
+  float: left;
+}
+.logo { /*bannerin logo*/
+  width: 5%;
+  height: 100%;
+  float:left;
 }
 
 .bannerbottom {
   position: relative;
-  height: 40%;
+  height: 52px;
   background-color: gray;
 }
 
 .intro {
   position: relative;
-  margin: 0 0;
   width: 50%;
+  margin: 0 auto;
   text-align: center;
   float: right;
   background: -webkit-linear-gradient(white, orange);
@@ -64,19 +74,20 @@ body, html {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
+  float: left;
 }
-li { /* muuttaa listan horisontaaliseksi */
+li a { /* muuttaa listan horisontaaliseksi */
   float: left;
 }
 .navbutton { /* <a> tagi napit */
   font-size: larger;
   display: block;
-  color:orange;
+  color:black;
   text-align: center;
-  padding: 16px;
+  padding: 15px;
   text-decoration: none;
   background-color: gray;
-  border: solid orange;
+  /*border: solid orange;*/
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
@@ -86,39 +97,9 @@ li { /* muuttaa listan horisontaaliseksi */
   background-color: orange;
 }
 
-
- /*Pääbanneri Loppuu */
+ /* Main Banner End */
  
- 
- /*Bottom banner */
-
- #storesearch{
-   font-size: 1vw;
-   position: absolute;
-   right: 9%;
-   top: 35%;
- }
-
- #cart{
-  border: none;
-  background-color: gray;
-  font-size: 1.5vw;
-  position: absolute;
-  right: 2%;
-  top:21%;
- }
- #cart:active{
-  background-color: rgb(139, 139, 139);
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
- }
- #cart:hover{
-   color: orange;
- }
-
-/*Index*/
-
-
+ /*Home*/
 
 .maincontainer{
   position: absolute;
@@ -145,29 +126,34 @@ li { /* muuttaa listan horisontaaliseksi */
   text-align: center;
 }
 
- /*Store /slideshow*/
+ /* Store */
 
-.slideshow{
-  position: relative;
-  top: 11%;
-}
-.mySlides{
-  position: relative;
-  margin: 0 auto;
-  height: 38vw;
-  padding-bottom: 2%;
-  width: 60vw;
-}
+ #storesearch{
+   font-size: 1vw;
+   position: absolute;
+   right: 9%;
+   top: 35%;
+ }
 
-#slideshowtxt{
-  right: 12%;
-  position: relative;
-  font-size: 2vw;
-}
+ #cart{
+  border: none;
+  background-color: gray;
+  font-size: 1.5vw;
+  position: absolute;
+  right: 2%;
+  top:21%;
+ }
+ #cart:active{
+  background-color: rgb(139, 139, 139);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ }
+ #cart:hover{
+   color: orange;
+ }
 
-/*Store/ Content */
-
-.storecontainer{
+ /* store content */
+ .storecontainer{
   position: relative;
   margin: 0 auto;
   background-image: linear-gradient(to bottom right, rgb(46, 46, 46), rgba(99, 99, 99, 0.801));
@@ -217,8 +203,33 @@ li { /* muuttaa listan horisontaaliseksi */
 .tuote button:hover {
   opacity: 0.7;
 }
+/* Store End*/
 
-/*loppualue*/
+/* slideshow */
+
+.slideshow{
+  position: relative;
+  top: 11%;
+}
+.mySlides{
+  position: relative;
+  margin: 0 auto;
+  height: 38vw;
+  padding-bottom: 2%;
+  width: 60vw;
+}
+
+#slideshowtxt{
+  right: 12%;
+  position: relative;
+  font-size: 2vw;
+}
+
+/*Store/ Content */
+
+
+
+/* Bottom Banner */
 
 .bottombanner{
   display: flex;
@@ -230,20 +241,7 @@ li { /* muuttaa listan horisontaaliseksi */
   justify-content: space-evenly;
 }
 
-.kuluttajalle{
-  display: flex;
-  flex-direction: column;
-}
-.yrityksille{
-  display: flex;
-  flex-direction: column;
-}
-.tili{
-  display: flex;
-  flex-direction: column;
-}
-
-.faq{
+.botlist{
   display: flex;
   flex-direction: column;
 }
@@ -267,3 +265,4 @@ ul{
   padding-left: 2%;
   padding-right: 2%;
 }
+/* Bottom Banner End*/

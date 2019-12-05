@@ -1,7 +1,10 @@
 # ossi-ja-toni
 yritys
-EI SAA HOMOILLA, LIND PERKELE
 
+
+# Banner kiveen hakattu jotta teksti ei mene liian pieneksi. Vaatii vielä vähän hifistelyä ulkoasun suhteen. Siirsin Menun bannerin ala osaan ja yläosa varattu yrityksen nimelle ja logolle (yt, sos. media?).
+Storen slideshow CSS jotenki kusee bannerin marginin.
+Siistin vähä CSS että on helpompi löytää asioita
 
 
 

@@ -16,12 +16,12 @@ body, html {
     background-attachment: fixed;
   }
   
-  .img1 { background-image: url("img/bgi1.JPG"); }
-  .img2 { background-image: url("img/bgi2.JPG"); }
-  .img3 { background-image: url("img/bgi3.jpg"); }
-  .img4 { background-image: url("img/bgi4.jpg"); }
-  .img5 { background-image: url("img/bgi5.jpg"); }
-  .img6 { background-image: url("img/bgi6.jpg"); }
+  .img1 { background-image: url("img/Background/bgi1.JPG"); }
+  .img2 { background-image: url("img/Background/bgi2.JPG"); }
+  .img3 { background-image: url("img/Background/bgi3.jpg"); }
+  .img4 { background-image: url("img/Background/bgi4.jpg"); }
+  .img5 { background-image: url("img/Background/bgi5.jpg"); }
+  .img6 { background-image: url("img/Background/bgi6.jpg"); }
 /* Taustakuvat loppuu */
 
 .topnav{
@@ -49,13 +49,11 @@ body, html {
   height: 100%;
   float:left;
 }
-
 .bannerbottom {
   position: relative;
   height: 52px;
   background-color: gray;
 }
-
 .intro {
   position: relative;
   width: 50%;
@@ -91,16 +89,14 @@ li a { /* muuttaa listan horisontaaliseksi */
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
-
 .navbutton:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   background-color: orange;
 }
-
  /* Main Banner End */
  
- /*Home*/
 
+ /*Home*/
 .maincontainer{
   position: absolute;
   height: 70vw;
@@ -121,20 +117,18 @@ li a { /* muuttaa listan horisontaaliseksi */
   background: -webkit-radial-gradient(orange,rgba(63, 63, 63, 0.904));
   margin: 0;
 }
-
 #infotxt{
   text-align: center;
 }
 
- /* Store */
 
+ /* Store */
  #storesearch{
    font-size: 1vw;
    position: absolute;
    right: 9%;
    top: 35%;
  }
-
  #cart{
   border: none;
   background-color: gray;
@@ -151,7 +145,6 @@ li a { /* muuttaa listan horisontaaliseksi */
  #cart:hover{
    color: orange;
  }
-
  /* store content */
  .storecontainer{
   position: relative;
@@ -162,7 +155,6 @@ li a { /* muuttaa listan horisontaaliseksi */
   top: 6%;
   padding-top: 3%;
 }
-
 .storecontent{
   display: flex;
   background-color: orange;
@@ -171,7 +163,6 @@ li a { /* muuttaa listan horisontaaliseksi */
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .tuote{
   background-image: radial-gradient(circle, white, grey);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -183,11 +174,9 @@ li a { /* muuttaa listan horisontaaliseksi */
   width: 25%;
   height: min-content;
 }
-
 #tuotek{
   width: 50%;
 }
-
 .tuote button {
   border: none;
   outline: 0;
@@ -199,14 +188,13 @@ li a { /* muuttaa listan horisontaaliseksi */
   width: 100%;
   font-size: 18px;
 }
-
 .tuote button:hover {
   opacity: 0.7;
 }
 /* Store End*/
 
-/* slideshow */
 
+/* slideshow */
 .slideshow{
   position: relative;
   top: 11%;
@@ -218,19 +206,14 @@ li a { /* muuttaa listan horisontaaliseksi */
   padding-bottom: 2%;
   width: 60vw;
 }
-
 #slideshowtxt{
   right: 12%;
   position: relative;
   font-size: 2vw;
 }
 
-/*Store/ Content */
-
-
 
 /* Bottom Banner */
-
 .bottombanner{
   display: flex;
   position: relative;
@@ -240,26 +223,21 @@ li a { /* muuttaa listan horisontaaliseksi */
   flex-direction: row;
   justify-content: space-evenly;
 }
-
 .botlist{
   display: flex;
   flex-direction: column;
 }
-
 .pohjaotsikot{
   text-align: center;
 }
-
 .pohjalinkit{
   text-align: center;
   color: black;
   text-decoration: none;
 }
-
 .pohjalinkit:hover{
   color: orange;
 }
-
 ul{
   list-style-type: none;
   padding-left: 2%;

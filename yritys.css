@@ -27,16 +27,18 @@ body, html {
 .topnav{
   display: none;
 }
-  /* Main Banner */
+/* Main Banner */
 .banner {
-  position: fixed;
-  z-index: 1;
+  position: relative;
+  z-index: 0;
   width: 100%;
   height: 132px;
   background-color: gray;
 }
 .bannertop {
   position: relative;
+  margin: 0 auto;
+  width: 100%;
   height: 80px;
   background-color: orange;
 }
@@ -51,6 +53,8 @@ body, html {
 }
 .bannerbottom {
   position: relative;
+  margin: 0 auto;
+  width: 80%;
   height: 52px;
   background-color: gray;
 }
@@ -63,7 +67,7 @@ body, html {
   background: -webkit-linear-gradient(white, orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-style: italic;
+  font-style: italic;margin:9px 0
 }
 /* navigointi menu tehty listalla!*/
 .nav {
@@ -94,7 +98,7 @@ li a { /* muuttaa listan horisontaaliseksi */
   background-color: orange;
 }
  /* Main Banner End */
- 
+
 
  /*Home*/
 .maincontainer{
@@ -150,9 +154,8 @@ li a { /* muuttaa listan horisontaaliseksi */
   position: relative;
   margin: 0 auto;
   background-image: linear-gradient(to bottom right, rgb(46, 46, 46), rgba(99, 99, 99, 0.801));
-  width: 95%;
-  height: 120vw;
-  top: 6%;
+  width: 80%;
+  height: 100vw;
   padding-top: 3%;
 }
 .storecontent{
@@ -197,21 +200,24 @@ li a { /* muuttaa listan horisontaaliseksi */
 /* slideshow */
 .slideshow{
   position: relative;
-  top: 11%;
+  top: auto;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:980px;
+  width: 50%;
+  height: 50%;
 }
 .mySlides{
   position: relative;
   margin: 0 auto;
-  height: 38vw;
-  padding-bottom: 2%;
-  width: 60vw;
+  height: 100%;
+  width: 100%;
 }
 #slideshowtxt{
   right: 12%;
   position: relative;
   font-size: 2vw;
 }
-
 
 /* Bottom Banner */
 .bottombanner{

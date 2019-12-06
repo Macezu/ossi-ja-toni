@@ -2,9 +2,9 @@
 yritys
 
 
-# Banner kiveen hakattu jotta teksti ei mene liian pieneksi. Vaatii vielä vähän hifistelyä ulkoasun suhteen. Siirsin Menun bannerin ala osaan ja yläosa varattu yrityksen nimelle ja logolle (yt, sos. media?).
-Storen slideshow CSS jotenki kusee bannerin marginin.
-Siistin vähä CSS että on helpompi löytää asioita
+Banner kiveen hakattu jotta teksti ei mene liian pieneksi. Vaatii vielä vähän hifistelyä ulkoasun suhteen. Siirsin Menun bannerin ala osaan ja yläosa varattu yrityksen nimelle ja logolle (yt, sos. media?).
+# otin w3-css slideshow tavarat "testi.css" tiedoston. nyt ei se css muuta muita määrittelyjä bannerissa ym. Banner ei oo enää sticky/fixed, Store container kokoo muutettu Home sivun kanssa yhtenäiseks. Home, Store containerin vois laittaa samalla määrittelyllä
+# logo ja yrityksen nimi banneriin vielä
 
 
 

@@ -69,7 +69,7 @@ body, html {
   -webkit-text-fill-color: transparent;
   font-style: italic;
   margin:auto;
-  font-size: x-large;
+  font-size: 2vw;
 
 }
 .medialink {
@@ -98,7 +98,7 @@ body, html {
   align-self: flex-start;
 }
 
-li a { /* muuttaa listan horisontaaliseksi */
+li a { /* muuttaa listan horisontaaliseksi */  /*KAIKKI MUUT RESPOSIIVISTA PAITSI TÄMÄ? MIKSI?*/
   float: left;
 }
 .navbutton { /* <a> tagi napit */
@@ -177,7 +177,7 @@ h5{
    margin: 0 auto;
   border: none;
   background-color: gray;
-  height: 90%;
+  height: 85%;
 
  }
 
@@ -206,7 +206,7 @@ h5{
   display: flex;
   background-color: orange;
   margin: 0 auto;
-  width: 78%;
+  width: 73%;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -216,24 +216,27 @@ h5{
   max-width: 40%;
   text-align: center;
   font-family: arial;
+  font-size: 1vw;
   padding-top: 1%;
   margin: 2%;
-  width: 29%;
+  width: 38%;
   height: min-content;
+  display: flex;
+  flex-direction: column;
 }
 #tuotek{
   width: 50%;
+  margin: 0 auto;
 }
 .tuote button {
   border: none;
   outline: 0;
-  padding: 12px;
   color: white;
   background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  padding: 1vw;
 }
 .tuote button:hover {
   opacity: 0.7;
@@ -249,18 +252,56 @@ h5{
   margin-right:auto;
   max-width:980px;
   width: 50%;
-  height: 70%;
+  height: 35vw;
 }
 .mySlides{
   position: relative;
   margin: 0 auto;
   height: 100%;
   width: 100%;
+  min-width: 40%;
 }
 #slideshowtxt{
   right: 12%;
   position: relative;
   font-size: 2vw;
+}
+
+
+/* Gallery */
+
+.gallerycontainer{
+  width: 95%;
+  height: auto;
+  display: flex;
+  position: relative;
+  background-color: rgba(63, 63, 63, 0.904);
+  margin: -35% auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryitem{
+  display: flex;
+  width: 50%;
+  height: 30%;
+  flex-direction: column;
+}
+
+#glafoto{
+  width: 70%;
+  height: 22vw;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.gallerytxt{
+  font-family: 'Gochi Hand', cursive;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 1.5vw; 
+  color: orange;
 }
 
 /* Bottom Banner */

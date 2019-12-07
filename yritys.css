@@ -65,7 +65,7 @@ body, html {
   float: right;
   background: -webkit-linear-gradient(white, orange);
   -webkit-background-clip: text;
-  background-clip: inherit;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
   margin:auto;

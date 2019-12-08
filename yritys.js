@@ -27,11 +27,24 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 
-/*Backgroundimage*/
-var change = $('.x2');
-$(window).on('scroll', function () {
-  var op = $(this).scrollTop();
-  change.css({
-    'opacity': (1 - op / 100)
-  });
+
+
+/* Storen Cart muuttujat*/
+
+let cartbtn = document.getElementById("cart")
+let tuote1 = document.getElementById("atc 1")
+let tuote2 = document.getElementById("atc 2")
+let tuote3 = document.getElementById("atc 3")
+let tuote4 = document.getElementById("atc 4")
+let tuote5 = document.getElementById("atc 5")
+let tuote6 = document.getElementById("atc 6")
+
+
+/*cart painettu*/
+cartbtn.addEventListener("click",function(){
+  cartavaus()
 });
+
+function cartavaus(){
+  display = "block"
+}

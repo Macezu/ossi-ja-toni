@@ -31,6 +31,8 @@ body, html {
   position: relative;
   display: none;
 }
+
+
 /* Main Banner */
 .banner {
   position: relative;
@@ -57,7 +59,7 @@ body, html {
   background-clip: text;
   color: black;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  text-emphasis-color: transparent;
   transition: color 200ms linear;
 }
 
@@ -414,20 +416,45 @@ ul{
 
 @media screen and (max-width: 800px){
   .banner{
-    height: 17.7%
+    height: 8.0%;
   }
+
+  .bannertop{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .title{
+    align-self: center;
+  }
+
   .some{
     display: none;
   }
   .bannerbottom{
     display: none;
+    height: 0;
     
   }
   .topnav{
     display: flex;
-    justify-content: flex-end;
     z-index: 2;
+    align-self: center;
+    flex-grow: 2;
+    justify-content: flex-end;
+    flex-shrink: 1;
+    
   }
+
+  .topnav a{
+    color: black;
+  }
+
+  .topnav a:hover{
+    color: whitesmoke;
+  }
+
   .slideshow{
     display: none;
   }

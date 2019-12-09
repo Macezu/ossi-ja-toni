@@ -1,10 +1,11 @@
 # ossi-ja-toni
 yritys
 
+Mediascreen Järjestyksessä Puhelin Sitten Tablettikoko, aattelin viimeistellä storen cartin toimimaan lähipäivinä. Mediascreen
+TO DO?
+1) Puhelinmallissa ehkä vielä ulkonäöllistä tuunausta? 2)Nuoli joka vie contacts kohtaan sivun alareunaan?
 
 Banner kiveen hakattu jotta teksti ei mene liian pieneksi. Vaatii vielä vähän hifistelyä ulkoasun suhteen. Siirsin Menun bannerin ala osaan ja yläosa varattu yrityksen nimelle ja logolle (yt, sos. media?).
-# otin w3-css slideshow tavarat "testi.css" tiedoston. nyt ei se css muuta muita määrittelyjä bannerissa ym. Banner ei oo enää sticky/fixed, Store container kokoo muutettu Home sivun kanssa yhtenäiseks. Home, Store containerin vois laittaa samalla määrittelyllä
-# logo ja yrityksen nimi banneriin vielä
 
 
 

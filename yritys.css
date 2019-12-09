@@ -406,17 +406,124 @@ ul{
   padding-left: 2%;
   padding-right: 2%;
 }
+
+.mobilebottom{
+  display: none;
+}
 /* Bottom Banner End*/
 
 
 /* Media Screen max 400px*/
-@media screen and (max-width: 400px){
+@media screen and (max-width: 515px){
+  html{
+    background-color: orange;
+  }
+
+  body{
+    height: auto;
+    background-color: gray;
+  }
+
+  .backgroundimages{
+    display: none;
+  }
+
+  .bg-image{
+    display: none;
+  }
+    /*Bannerin muutokset*/
+    .banner{
+      height: 8.0%;
+    }
   
+    .bannertop{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .title{
+      align-self: center;
+      font-size: 4vw;
+      margin-top: 0%;
+    }
+  
+    .some{
+      display: none;
+    }
+    .bannerbottom{
+      display: none;
+      
+    }
+    .topnav{
+      display: flex;
+      z-index: 2;
+      align-self: center;
+      flex-grow: 2;
+      justify-content: flex-end;
+      flex-shrink: 1;
+      
+    }
+  
+    .topnav a{
+      color: black;
+      margin-right: 3px;
+    }
+  
+    .topnav a:hover{
+      color: whitesmoke;
+    }
+  
+  /*Index Muutokset*/
+  
+  .maincontainer{
+    margin: 10% auto;
+    margin-bottom: 5%;
+  }
+
+  /*Gallery Muutokset*/
+  .gallerycontainer{
+    margin: 1% auto;
+  }
+
+  /*Store muutokset*/
+  
+    .slideshow{
+      display: none;
+    }
+  
+    .storecontainer{
+      width: 100%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      height: min-content;
+    }
+
+  /*Pohjan Muutokset*/
+
+  .bottombanner{
+    display: none;
+  }
+
+  .botlist{
+    display: block;
+    margin: 0% auto;
+  }
+  .mobilebottom{
+    display: flex;
+    visibility: visible;
+    background-image: linear-gradient(to bottom, gray, orange);
+  }
+
+  .pohjalinkit:hover{
+    color: whitesmoke;
+  }
 }
 
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) and (min-width:515px){
+
+  /*TABLETTI KOKO*/
   /*Bannerin muutokset*/
   .banner{
     height: 8.0%;
@@ -469,10 +576,22 @@ ul{
   .storecontainer{
     width: 100%;
     padding-top: 1%;
+    padding-bottom: 1%;
+    height: min-content;
   }
 
-  .storecontent{
-    width: 60%;
+  /* Bottom Banner*/
+  .botlist{
+    flex-basis: min-content;
   }
 
+  .pohjaotsikot{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .mobilebottom{
+    visibility: hidden;
+  }
+  
 }

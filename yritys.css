@@ -163,7 +163,7 @@ body, html {
   align-self: flex-start;
 }
 
-li a { /* muuttaa listan horisontaaliseksi */  /*KAIKKI MUUT RESPOSIIVISTA PAITSI TÄMÄ? MIKSI?*/
+li a { /* muuttaa listan horisontaaliseksi */
   float: left;
 }
 .navbutton { /* <a> tagi napit */
@@ -439,7 +439,6 @@ ul{
   }
   .bannerbottom{
     display: none;
-    height: 100%;
     
   }
   .topnav{
@@ -452,7 +451,6 @@ ul{
     
   }
 
-
   .topnav a{
     color: black;
     margin-right: 3px;
@@ -462,7 +460,19 @@ ul{
     color: whitesmoke;
   }
 
+/*Store muutokset*/
+
   .slideshow{
     display: none;
   }
+
+  .storecontainer{
+    width: 100%;
+    padding-top: 1%;
+  }
+
+  .storecontent{
+    width: 60%;
+  }
+
 }

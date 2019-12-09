@@ -61,6 +61,8 @@ body, html {
   -webkit-text-fill-color: transparent;
   text-emphasis-color: transparent;
   transition: color 200ms linear;
+  margin-top: 1%;
+  margin-bottom: 0%;
 }
 
 .title:hover{
@@ -415,6 +417,7 @@ ul{
 
 
 @media screen and (max-width: 800px){
+  /*Bannerin muutokset*/
   .banner{
     height: 8.0%;
   }
@@ -427,6 +430,8 @@ ul{
 
   .title{
     align-self: center;
+    font-size: 4vw;
+    margin-top: 0%;
   }
 
   .some{
@@ -434,7 +439,7 @@ ul{
   }
   .bannerbottom{
     display: none;
-    height: 0;
+    height: 100%;
     
   }
   .topnav{
@@ -447,8 +452,10 @@ ul{
     
   }
 
+
   .topnav a{
     color: black;
+    margin-right: 3px;
   }
 
   .topnav a:hover{

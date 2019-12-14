@@ -1,7 +1,7 @@
 # ossi-ja-toni
 yritys
 
-Mediascreen Järjestyksessä Puhelin Sitten Tablettikoko, aattelin viimeistellä storen cartin toimimaan lähipäivinä. Mediascreen
+Mediascreen Järjestyksessä Puhelin Sitten Tablettikoko, aattelin viimeistellä storen cartin toimimaan lähipäivinä.
 TO DO?
 1) Puhelinmallissa ehkä vielä ulkonäöllistä tuunausta? 2)Nuoli joka vie contacts kohtaan sivun alareunaan?
 

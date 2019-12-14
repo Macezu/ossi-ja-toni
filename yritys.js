@@ -29,6 +29,7 @@ function showDivs(n) {
 
 
 
+
 /* Storen Cart muuttujat*/
 
 let cartbtn = document.getElementById("cart")

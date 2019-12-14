@@ -71,9 +71,11 @@ body, html {
   transition: background-position 2000ms ease-out;
 }
 
+
 .logo { /*bannerin logo*/
-  height: 100%;
   float: left;
+  height: 100%;
+  background-color: orange;
 }
 
 .some{
@@ -157,15 +159,13 @@ body, html {
   width: 30%;
   margin: 0 auto;
   padding: 0;  
+  display: flex;
 }
 
 .storenav{
   align-self: flex-start;
 }
 
-li a { /* muuttaa listan horisontaaliseksi */
-  float: left;
-}
 .navbutton { /* <a> tagi napit */
   font-size: larger;
   display: block;
@@ -182,6 +182,7 @@ li a { /* muuttaa listan horisontaaliseksi */
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   background-color: orange;
 }
+
  /* Main Banner End */
 
 
@@ -414,7 +415,7 @@ ul{
 
   /*KännykkäKOKO!*/
 /* Media Screen max 400px*/
-@media screen and (max-width: 515px){
+@media screen and (max-width: 515px) and (min-width:0px){
   html{
     background-color: orange;
   }
@@ -440,16 +441,22 @@ ul{
       display: flex;
       flex-direction: row;
     }
-  
+
     .title{
       align-self: center;
-      font-size: 4vw;
+      font-size: 5vw;
       margin-top: 0%;
     }
   
     .some{
       display: none;
     }
+
+    .logo{
+      height: 60%;
+      margin-top: 5%;
+    }
+
     .bannerbottom{
       display: none;
       
@@ -461,9 +468,8 @@ ul{
       flex-grow: 2;
       justify-content: flex-end;
       flex-shrink: 1;
-      
     }
-  
+
     .topnav a{
       color: black;
       margin-right: 3px;
@@ -473,6 +479,9 @@ ul{
       color: whitesmoke;
     }
   
+    #contactsmobile{
+      visibility: hidden;
+    }
   /*Index Muutokset*/
   
   .maincontainer{
@@ -518,8 +527,6 @@ ul{
     color: whitesmoke;
   }
 }
-
-
 
 @media screen and (max-width: 800px) and (min-width:515px){
 

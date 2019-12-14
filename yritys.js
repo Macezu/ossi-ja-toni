@@ -32,6 +32,7 @@ function showDivs(n) {
 
 /* Storen Cart muuttujat*/
 
+let cartimg = document.getElementById("cartimg")
 let cartbtn = document.getElementById("cart")
 let tuote1 = document.getElementById("atc 1")
 let tuote2 = document.getElementById("atc 2")
@@ -40,12 +41,6 @@ let tuote4 = document.getElementById("atc 4")
 let tuote5 = document.getElementById("atc 5")
 let tuote6 = document.getElementById("atc 6")
 
+/* Cartista Array*/
+cartimg = []
 
-/*cart painettu*/
-cartbtn.addEventListener("click",function(){
-  cartavaus()
-});
-
-function cartavaus(){
-  display = "block"
-}

@@ -1,7 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: rgb(169, 186, 204);
+    background-color: rgb(169, 186, 204); 
+    counter-reset: section;
   }
 
   * {
@@ -254,6 +255,17 @@ h5{
  margin: 1%;
 }
 
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 15%;
+}
+
 #cartimg{
   height: 80%;
 }
@@ -301,6 +313,10 @@ h5{
   width: 50%;
   margin: 0 auto;
 }
+
+#tuotek:hover{
+  transform: scale(2.0);
+}
 .tuote button {
   border: none;
   outline: 0;
@@ -310,6 +326,10 @@ h5{
   cursor: pointer;
   width: 100%;
   padding: 1vw;
+}
+
+#cartimg::before{
+counter-increment: section;
 }
 
 .tuote button:active{

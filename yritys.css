@@ -33,6 +33,13 @@ body, html {
 }
 
 
+#kurssitxt{
+  text-align: center;
+  font-size: 2vw;
+  padding: 2% 2%;
+  font-family: 'Gochi Hand', cursive;
+}
+
 /* Main Banner */
 .banner {
   position: relative;

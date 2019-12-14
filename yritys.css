@@ -321,6 +321,28 @@ h5{
   opacity: 0.7;
 }
 
+
+#storepage{
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sp {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #c0c0c0;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+.active, .sp:hover {
+  background-color: orange;
+  color: white;
+}
 /* Store End*/
 
 
@@ -512,6 +534,10 @@ ul{
       padding-top: 1%;
       padding-bottom: 1%;
       height: min-content;
+    }
+
+    .sp{
+      font-size: 8px;
     }
 
   /*Pohjan Muutokset*/

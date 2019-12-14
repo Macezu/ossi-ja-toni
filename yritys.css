@@ -163,14 +163,14 @@ body, html {
 /* navigointi menu tehty listalla!*/
 .nav {
   list-style-type: none;
-  width: 30%;
   margin: 0 auto;
   padding: 0;  
   display: flex;
 }
 
 .storenav{
-  align-self: flex-start;
+  flex: 1;
+  padding-left: 5%;
 }
 
 .navbutton { /* <a> tagi napit */
@@ -178,7 +178,7 @@ body, html {
   display: block;
   color:black;
   text-align: center;
-  padding: 15px;
+  padding: 14px;
   text-decoration: none;
   background-color: gray;
   /*border: solid orange;*/
@@ -242,17 +242,17 @@ h5{
 .storebanner{
   justify-content: space-around;
 }
-.storenav{
-  margin: 0 15%;
-}
 
  #cart{
-   margin: 0 auto;
   border: none;
   background-color: gray;
   height: 85%;
 
  }
+
+#storesearch{
+ margin: 1%;
+}
 
 #cartimg{
   height: 80%;

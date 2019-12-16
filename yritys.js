@@ -32,19 +32,50 @@ function showDivs(n) {
 
 /* Storen Cart muuttujat*/
 
+let cart = document.getElementById("cart")
 let cartimg = document.getElementById("cartimg")
 let cartbtn = document.getElementById("cart")
-let tuote1 = document.getElementsByClassName("atc")
+let buttons = document.querySelectorAll(".atc").length;
 
-/* Cartista Array*/
-cartimg = []
+/* Cartista array*/
+cart= [];
 
-tuote1.addEventListener("click", function(){
-  tuotelisäys();
-});
+/*cart numero päivitys*/
 
-function tuotelisäys(){
-  cartimg.push("tuote");
-  console.log("homoo")
-  return "tuote";
+cartimg  = [];
+  cartimg[0] = "img/Store/cart.png";
+  cartimg[1] = "img/Store/cart1.png";
+  cartimg[2] = "img/Store/cart2.png";
+  cartimg[3] = "img/Store/cart3.png";
+  cartimg[4] = "img/Store/cart4.png";
+  cartimg[5] = "img/Store/cart5.png";
+  cartimg[6] = "img/Store/cart6.png";
+var numbah = 0;
+
+
+/* Kaikki Buttonit Valintaan*/
+for (var i = 0; i < buttons ; i++) {
+    document.querySelectorAll(".atc")[i].addEventListener("click", function() {
+        addtocart();
+        alert("Added to Cart");
+    });
 }
+
+//kuvan muutos kun tuote addataan //
+function changepic()
+   {
+
+      if (numbah>=cartimg.length-1){
+         numbah=0;
+      }
+      numbah=numbah+1;
+      document.cartkuva.src=cartimg[numbah];
+   }
+
+
+/* Lisätään carttiin*/
+ function addtocart(){
+  changepic();
+  cart.push(1);
+  console.log('Added Product')
+ }

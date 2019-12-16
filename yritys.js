@@ -34,13 +34,17 @@ function showDivs(n) {
 
 let cartimg = document.getElementById("cartimg")
 let cartbtn = document.getElementById("cart")
-let tuote1 = document.getElementById("atc 1")
-let tuote2 = document.getElementById("atc 2")
-let tuote3 = document.getElementById("atc 3")
-let tuote4 = document.getElementById("atc 4")
-let tuote5 = document.getElementById("atc 5")
-let tuote6 = document.getElementById("atc 6")
+let tuote1 = document.getElementsByClassName("atc")
 
 /* Cartista Array*/
 cartimg = []
 
+tuote1.addEventListener("click", function(){
+  tuotelisäys();
+});
+
+function tuotelisäys(){
+  cartimg.push("tuote");
+  console.log("homoo")
+  return "tuote";
+}

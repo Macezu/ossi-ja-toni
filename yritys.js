@@ -36,6 +36,7 @@ let cart = document.getElementById("cart")
 let cartimg = document.getElementById("cartimg")
 let cartbtn = document.getElementById("cart")
 let buttons = document.querySelectorAll(".atc").length;
+let texsti = document.getElementById("teksti")
 
 /* Cartista array*/
 cart= [];
@@ -57,7 +58,6 @@ var numbah = 0;
 for (var i = 0; i < buttons ; i++) {
     document.querySelectorAll(".atc")[i].addEventListener("click", function() {
         addtocart();
-        alert("Added to Cart");
     });
 }
 
@@ -76,6 +76,13 @@ function changepic()
 /* Lisätään carttiin*/
  function addtocart(){
   changepic();
-  cart.push(1);
+  texsti.innerHTML = "Product has been added to cart";
   console.log('Added Product')
- }
+}
+
+function wait(ms){
+var d = new Date();
+var d2 = null;
+do { d2 = new Date(); }
+while(d2-d < ms);
+}

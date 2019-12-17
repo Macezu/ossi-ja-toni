@@ -34,9 +34,9 @@ function showDivs(n) {
 
 let cart = document.getElementById("cart")
 let cartimg = document.getElementById("cartimg")
-let cartbtn = document.getElementById("cart")
 let buttons = document.querySelectorAll(".atc").length;
 let texsti = document.getElementById("teksti")
+let content = document.getElementById("cartcontent")
 
 /* Cartista array*/
 cart= [];
@@ -61,7 +61,7 @@ for (var i = 0; i < buttons ; i++) {
     });
 }
 
-//kuvan muutos kun tuote addataan //
+//cartissa kuvan muutos, kun tuotetta painetaan //
 function changepic()
    {
 
@@ -73,16 +73,23 @@ function changepic()
    }
 
 
-/* Lisätään carttiin*/
+/* Tuotetta painettu*/
  function addtocart(){
   changepic();
   texsti.innerHTML = "Product has been added to cart";
   console.log('Added Product')
 }
 
-function wait(ms){
-var d = new Date();
-var d2 = null;
-do { d2 = new Date(); }
-while(d2-d < ms);
+
+/* Carttia Painettu*/
+function displaycontent()
+{
+  if(content.style.display == 'none')
+  {
+     content.style.display='block';
+  }
+  else
+  {
+      content.style.display = 'none';
+  }
 }

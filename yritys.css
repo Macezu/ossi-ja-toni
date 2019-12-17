@@ -278,6 +278,19 @@ input[type=text]:focus {
  #cart:hover{
    color: orange;
  }
+
+ 
+ #cartcontent{
+   display: none;
+   position: absolute;
+   top: 20%;
+   right: 1%;
+   height: 260px;
+   width: 300px;
+   background-color: gray;
+   border: solid orange;
+ }
+
  /* store content */
  .storecontainer{
   position: relative;

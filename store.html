@@ -51,7 +51,7 @@
          <li><a href="./courses.html" class="navbutton">Courses</a></li>
          <li><a href="#bottom" class="navbutton">Contacts</a></li>
        </ul>
-       <button id="cart"><img id="cartimg" src="img/Store/cart.png" name="cartkuva" alt="cart"></button>
+       <button id="cart" onclick=displaycontent()><img id="cartimg" src="img/Store/cart.png" name="cartkuva" alt="cart"></button>
        <input id="storesearch" type="text" name="search" placeholder="Store search.."> 
    </div>
  </div>
@@ -70,6 +70,10 @@
     -->
     <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+
+<div id= "cartcontent">
+ <h5 style="text-align: center;">Your Shopping Cart</h5>
 </div>
 
 <div class="container storecontainer">

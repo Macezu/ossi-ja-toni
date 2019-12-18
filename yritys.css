@@ -8,31 +8,30 @@ body, html {
   * {
     box-sizing: border-box;
   }
-  /* Taustakuvat */
-  .backgroundimages{
-  height: 35vw;
-  }
-  .bg-image {
-    width: 100%;
-    height: 60%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  .img1 { background-image: url("img/Background/bgi1.JPG"); }
-  .img2 { background-image: url("img/Background/bgi2.JPG"); }
-  .img3 { background-image: url("img/Background/bgi3.jpg"); }
-  .img4 { background-image: url("img/Background/bgi4.jpg"); }
-  .img5 { background-image: url("img/Background/bgi5.jpg"); }
-  .img6 { background-image: url("img/Background/bgi6.jpg"); }
-/* Taustakuvat loppuu */
-
-.topnav{
-  position: relative;
+.topnav {
   display: none;
 }
-
+  /* Taustakuvat */ 
+#slide_bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 16s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  background-image:url("img/Background/1.JPG"); ;
+}
+@keyframes slideBg{
+  0% {background-image: url("img/Background/1.JPG");}
+  25% {background-image: url("img/Background/2.JPG");}
+  50% {background-image: url("img/Background/3.JPG");}
+  75% {background-image: url("img/Background/4.JPG");}
+  100% {background-image: url("img/Background/5.JPG");}
+}
+  /* Taustakuvat loppuu */
 
 #kurssitxt{
   text-align: center;
@@ -57,7 +56,7 @@ body, html {
   background-color: orange;
 }
 .title { /* sivuston nimi bannerissa*/
-  font-size: 3vw;
+  font-size: xx-large;
   float: left;
   background-image: -webkit-linear-gradient(left, black 25%, red 37.5%, red, rgb(248, 161, 0) 62.5%, black 75%);
   background-image: linear-gradient(90deg, black 25%, red 37.5%, red, rgb(248, 161, 0) 62.5%, black 75%);
@@ -131,20 +130,21 @@ body, html {
 .bannerbottom {
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   height: 52px;
   background-color: gray;
   display: flex;
 }
 .intro {
-  float: right;
+  display: block;
+  text-align: right;
   background: -webkit-linear-gradient(white, orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
   margin:auto;
-  font-size: 2vw;
+  font-size: xx-large;
 
 }
 .medialink {
@@ -167,11 +167,8 @@ body, html {
   margin: 0 auto;
   padding: 0;  
   display: flex;
-}
-
-.storenav{
   flex: 1;
-  padding-left: 5%;
+  padding-left: 0;
 }
 
 .navbutton { /* <a> tagi napit */
@@ -199,8 +196,8 @@ body, html {
   position: relative;
   height: 97vw;
   background-color: rgba(63, 63, 63, 0.795);
-  width: 80%;
-  margin: -29% auto;
+  width:80%;
+  margin:1% auto;
   display: flex;
   align-items: center;
 }
@@ -211,7 +208,6 @@ body, html {
   font-family: 'Gochi Hand', cursive;
   margin-bottom: 0;
 }
-
 h5{
   margin-bottom: 2%;
 }
@@ -221,55 +217,47 @@ h5{
   width: 75%;
   margin: 0 auto;
 }
-#herewego{
+.herewego{
   text-align: center;
   background: -webkit-radial-gradient(orange,rgba(63, 63, 63, 0.904));
   margin: 0;
   font-size: 2vw;
 }
-#infotxt{
+.infotxt{
   text-align: center;
   font-size: 2vw;
   padding: 2% 2%;
   font-family: 'Gochi Hand', cursive;
 }
-
 #logo2{
   height: 16vw;
   object-fit: contain;
 }
-
  /* Store */ 
 .storebanner{
   justify-content: space-around;
 }
-
  #cart{
   border: none;
   background-color: gray;
   height: 85%;
 
  }
-
 #storesearch{
  margin: 1%;
 }
-
 input[type=text] {
   width: 130px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
-
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
   width: 15%;
 }
-
 #cartimg{
   height: 80%;
 }
-
  #cart:active{
   background-color: rgb(139, 139, 139);
   box-shadow: 0 5px #666;
@@ -278,8 +266,6 @@ input[type=text]:focus {
  #cart:hover{
    color: orange;
  }
-
- 
  #cartcontent{
    display: none;
    position: absolute;
@@ -300,7 +286,7 @@ input[type=text]:focus {
  /* store content */
  .storecontainer{
   position: relative;
-  margin: 0 auto;
+  margin:0 auto;
   background-image: linear-gradient(to bottom right, rgb(197, 197, 197), gray, rgba(66, 66, 66, 0.801));
   width: 80%;
   height: 100vw;
@@ -329,12 +315,12 @@ input[type=text]:focus {
   display: flex;
   flex-direction: column;
 }
-#tuotek{
+.tuotek{
   width: 50%;
   margin: 0 auto;
 }
 
-#tuotek:hover{
+.tuotek:hover{
   transform: scale(2.0);
 }
 .tuote button {
@@ -408,17 +394,27 @@ counter-increment: section;
   position: relative;
   font-size: 2vw;
 }
-
+/* Slideshow napit ja siirtymis animaatio otettu w3-schoolista */
+.w3-animate-right{position:relative;animation:animateright 0.8s}
+@keyframes animateright{from{right:0px;opacity:0} to{right:0;opacity:1}}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.w3-button{height: 100%;}
+.w3-button{white-space:normal}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
 
 /* Gallery */
 
 .gallerycontainer{
-  width: 95%;
+  width: 80%;
   height: auto;
   display: flex;
   position: relative;
   background-color: rgba(63, 63, 63, 0.904);
-  margin: -35% auto;
+  margin:1% auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -431,7 +427,7 @@ counter-increment: section;
   flex-direction: column;
 }
 
-#glafoto{
+.glafoto{
   width: 70%;
   height: 22vw;
   margin: 0 auto;
@@ -481,7 +477,9 @@ ul{
   display: none;
 }
 /* Bottom Banner End*/
-
+@media screen and (max-width: 1114px) and (min-width:801px){
+  .intro{display: none;}
+}
   /*KännykkäKOKO!*/
 /* Media Screen max 400px*/
 @media screen and (max-width: 515px) and (min-width:0px){
@@ -493,14 +491,7 @@ ul{
     height: auto;
     background-color: gray;
   }
-
-  .backgroundimages{
-    display: none;
-  }
-
-  .bg-image{
-    display: none;
-  }
+  #slide_bg { display: none;}
     /*Bannerin muutokset*/
     .banner{
       height: 8.0%;
@@ -554,15 +545,58 @@ ul{
   /*Index Muutokset*/
   
   .maincontainer{
-    margin: 10% auto;
-    margin-bottom: 5%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+  .maincontent {
+    width: 95%;
+    height: auto;
+  }
+  .herewego {display: none;}
+  .headers {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 4vw;
   }
 
   /*Gallery Muutokset*/
   .gallerycontainer{
-    margin: 1% auto;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
   }
-
+  
+  .galleryitem{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin:1% auto;
+    flex-direction: column;
+  }
+  
+  .glafoto{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+  
+  .gallerytxt{
+    font-size: 3vw; 
+    color: orange;
+  }
+  /*index muutokset*/
+  .maincontainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: min-content;
+  }
   /*Store muutokset*/
   
     .slideshow{
@@ -575,7 +609,10 @@ ul{
       padding-bottom: 1%;
       height: min-content;
     }
-
+    .storecontent {
+      width: 90%;
+    }
+  
     .sp{
       font-size: 8px;
     }
@@ -600,7 +637,6 @@ ul{
     color: whitesmoke;
   }
 }
-
 @media screen and (max-width: 800px) and (min-width:515px){
 
   /*TABLETTI KOKO*/
@@ -635,7 +671,6 @@ ul{
     flex-grow: 2;
     justify-content: flex-end;
     flex-shrink: 1;
-    
   }
 
   .topnav a{
@@ -646,6 +681,7 @@ ul{
   .topnav a:hover{
     color: whitesmoke;
   }
+
 
 /*Store muutokset*/
 
@@ -659,7 +695,7 @@ ul{
     padding-bottom: 1%;
     height: min-content;
   }
-
+  
   /* Bottom Banner*/
   .botlist{
     flex-basis: min-content;
@@ -673,5 +709,4 @@ ul{
   .mobilebottom{
     visibility: hidden;
   }
-  
 }

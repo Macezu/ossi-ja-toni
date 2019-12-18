@@ -37,6 +37,7 @@ let cartimg = document.getElementById("cartimg")
 let buttons = document.querySelectorAll(".atc").length;
 let texsti = document.getElementById("teksti")
 let content = document.getElementById("cartcontent")
+let cartitems = document.getElementById("tuotteetkartis")
 
 /* Cartista array*/
 cart= [];
@@ -61,6 +62,8 @@ for (var i = 0; i < buttons ; i++) {
     });
 }
 
+
+
 //cartissa kuvan muutos, kun tuotetta painetaan //
 function changepic()
    {
@@ -76,7 +79,12 @@ function changepic()
 /* Tuotetta painettu*/
  function addtocart(){
   changepic();
+  cart.push("Elämäsi kuohut")
   texsti.innerHTML = "Product has been added to cart";
+  /* Alempi näyttää Arrayn sisällön cartissa*/
+  for (i = 0; i < cart.length; i++)
+  cartitems.innerHTML =((i+1)+" kpl" + ": " + cart[i]);
+
   console.log('Added Product')
 }
 
@@ -86,10 +94,12 @@ function displaycontent()
 {
   if(content.style.display == 'none')
   {
-     content.style.display='block';
+     content.style.display='flex';
   }
   else
   {
       content.style.display = 'none';
   }
 }
+
+

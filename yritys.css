@@ -287,10 +287,16 @@ input[type=text]:focus {
    right: 1%;
    height: 260px;
    width: 300px;
+   flex-direction: column;
    background-color: gray;
    border: solid orange;
  }
 
+#checkout{
+  background-color: aliceblue;
+  width: 100%;
+  margin-top: auto;
+}
  /* store content */
  .storecontainer{
   position: relative;

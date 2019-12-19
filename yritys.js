@@ -41,18 +41,17 @@ let cartitems = document.getElementById("tuotteetkartis")
 /* Cartista array*/
 cart= [];
 
-/*cart numero päivitys*/
-
-cartimg  = [];
-  cartimg[0] = "img/Store/cart.png";
-  cartimg[1] = "img/Store/cart1.png";
-  cartimg[2] = "img/Store/cart2.png";
-  cartimg[3] = "img/Store/cart3.png";
-  cartimg[4] = "img/Store/cart4.png";
-  cartimg[5] = "img/Store/cart5.png";
-  cartimg[6] = "img/Store/cart6.png";
-var numbah = 0;
-
+/*cart numeron päivitys*/
+ucartimg  = [];
+  ucartimg[0] = "img/Store/cart.png";
+  ucartimg[1] = "img/Store/cart1.png";
+  ucartimg[2] = "img/Store/cart2.png";
+  ucartimg[3] = "img/Store/cart3.png";
+  ucartimg[4] = "img/Store/cart4.png";
+  ucartimg[5] = "img/Store/cart5.png";
+  ucartimg[6] = "img/Store/cart6.png";
+var currentpic = 0;
+var lastpic = ucartimg.length-1;
 
 /* Kaikki Buttonit Valintaan*/
 for (var i = 0; i < buttons ; i++) {
@@ -64,15 +63,19 @@ for (var i = 0; i < buttons ; i++) {
 
 
 //cartissa kuvan muutos, kun tuotetta painetaan //
-function changepic()
-   {
 
-      if (numbah>=cartimg.length-1){
-         numbah=0;
-      }
-      numbah=numbah+1;
-      document.cartkuva.src=cartimg[numbah];
-   }
+function changepic(){
+    if (currentpic == lastpic)
+    {
+        currentpic = 0;
+        cartimg.src = ucartimg[currentpic];
+    }
+    else
+    {
+        currentpic++;
+        cartimg.src = ucartimg[currentpic];
+    }
+  }
 
 
 /* Tuotetta painettu*/

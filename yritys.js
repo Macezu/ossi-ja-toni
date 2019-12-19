@@ -35,7 +35,6 @@ function showDivs(n) {
 let cart = document.getElementById("cart")
 let cartimg = document.getElementById("cartimg")
 let buttons = document.querySelectorAll(".atc").length;
-let texsti = document.getElementById("teksti")
 let content = document.getElementById("cartcontent")
 let cartitems = document.getElementById("tuotteetkartis")
 
@@ -80,7 +79,7 @@ function changepic()
  function addtocart(){
   changepic();
   cart.push("Elämäsi kuohut")
-  texsti.innerHTML = "Product has been added to cart";
+  alert("Product has been added to cart");
   /* Alempi näyttää Arrayn sisällön cartissa*/
   for (i = 0; i < cart.length; i++)
   cartitems.innerHTML =((i+1)+" kpl" + ": " + cart[i]);

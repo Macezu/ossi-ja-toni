@@ -2,13 +2,14 @@
 <html>
 
 <head>
-<link rel="icon" type="image/ico" sizes="96x96" href="img/blowingbros.png">
+<link rel="icon" type="image/ico" sizes="96x96" href="img/favicon.ico">
 <title>Store</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" type="text/css" href="./testi.css">
 <link rel="stylesheet" type="text/css" href="./yritys.css">
 
 </head>
@@ -31,8 +32,8 @@
         <div id="myLinks">
           <a href="./index.html">Home</a>
           <a href="./store.html">Store</a>
-          <a href="./gallery.html">Gallery</a>
-          <a href="./courses.html">Courses</a>
+          <a a href="./gallery.html">Gallery</a>
+          <a a href="./courses.html">Courses</a>
           <a id="contactsmobile" href="#bottom">Contacts</a>
         </div>
         <!-- "Hamburger menu"-->
@@ -43,14 +44,14 @@
 
    </div>
    <div class="bannerbottom storebanner">
-       <ul class= "nav">
+       <ul class= "nav storenav">
          <li><a href="./index.html" class="navbutton">Home</a></li>
          <li><a href="./store.html" class="navbutton">Store</a></li>
          <li><a href="./gallery.html" class="navbutton">Gallery</a></li>
          <li><a href="./courses.html" class="navbutton">Courses</a></li>
          <li><a href="#bottom" class="navbutton">Contacts</a></li>
        </ul>
-       <button id="cart" onclick=displaycontent() ><img id="cartimg" src="img/Store/cart.png" alt="cart"></button>
+       <button id="cart" onclick=displaycontent() ><img id="cartimg" src="img/Store/cart.png" name="cartkuva" alt="cart"></button>
        <input id="storesearch" type="text" name="search" placeholder="Store search.."> 
    </div>
  </div>
@@ -58,10 +59,10 @@
 <!--Banner End-->   
 
 <div class="slideshow">
-    <img class="mySlides w3-animate-right" src="img/Slideshow/slide1.jpg" alt="bgimg">
-    <img class="mySlides w3-animate-right" src="img/Slideshow/slide2.jpg" alt="bgimg">
-    <img class="mySlides w3-animate-right" src="img/Slideshow/slide3.jpg" alt="bgimg">
-    <img class="mySlides w3-animate-right" src="img/Slideshow/slide4.jpg" alt="bgimg">
+    <img class="mySlides w3-animate-right" src="img/Slideshow/slide1.jpg">
+    <img class="mySlides w3-animate-right" src="img/Slideshow/slide2.jpg">
+    <img class="mySlides w3-animate-right" src="img/Slideshow/slide3.jpg">
+    <img class="mySlides w3-animate-right" src="img/Slideshow/slide4.jpg">
     <!--
       <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-trasparent">
           <h3 id="slideshowtxt">"The perfect gift does not exis...."</h3> 
@@ -82,52 +83,52 @@
 
   <div class="content storecontent">
         <div class="tuote 1">
-          <img class="tuotek" src="img/Store/item1.jpg" alt="Glass">
+          <img id="tuotek" src="img/Store/item1.jpg" alt="Glass">
           <h1>Elämäsi Kuohut</h1>
           <p class="price">87,95€</p>
           <p>Elämäsi tärkeimmälle päivälle. Huomaa jalan kaunis kupari viimeistely.</p>
-          <button class="atc 1">Add to Cart</button>
+          <button class="atc 1" id="teksti">Add to Cart</button>
         </div> 
     
         <div class="tuote 2">
-            <img class="tuotek" src="img/Store/item2.png" alt="Glass item">
+            <img id="tuotek" src="img/Store/item2.png" alt="Glass item">
             <h1>Kulta Siemaus</h1>
             <p class="price">50,90€</p>
             <p>Yksityiskohdat luovat lasin! Lepuuta huuliasi 24k kullassa.</p>
-            <button class="atc 2">Add to Cart</button>
+            <button class="atc 2" id="teksti">Add to Cart</button>
           </div> 
 
     <div class="tuote 3">
-          <img class="tuotek" src="img/Store/item3.jpg" alt="Glass item">
+          <img id="tuotek" src="img/Store/item3.jpg" alt="Glass item">
           <h1>Sininen Sielu</h1>
           <p class="price">39.99€</p>
           <p>Acqua de Vida, tarjoile elämän vesi arvoisestaan astiasta.
           </p>
-          <button class="atc 3">Add to Cart</button>
+          <button class="atc 3" id="teksti">Add to Cart</button>
         </div>
 
         <div class="tuote 4">
-            <img class="tuotek" src="img/Store/item4.jpg" alt="Glass item">
+            <img id="tuotek" src="img/Store/item4.jpg" alt="Glass item">
             <h1>Rainbow's Tear</h1>
             <p class="price">129,95€</p>
             <p>Ainutkertainen mahdollisuus saada pala sateenkaarta omaan kotiin.</p>
-            <button class="atc 4">Add to Cart</button>
+            <button class="atc 4" id="teksti">Add to Cart</button>
           </div>  
 
           <div class="tuote 5">
-              <img class="tuotek" src="img/Store/item5.jpg" alt="Glass item">
+              <img id="tuotek" src="img/Store/item5.jpg" alt="Glass item">
               <h1>Maailman Värit</h1>
               <p class="price">99,95€</p>
               <p>Katso sen sisälle ja unohda maailman murheet, 100% stressin poisto</p>
-              <button class="atc 5">Add to Cart</button>
+              <button class="atc 5" id="teksti">Add to Cart</button>
             </div>
             
             <div class="tuote 6">
-                <img class="tuotek" src="img/Store/item6.jpg" alt="Glass item">
+                <img id="tuotek" src="img/Store/item6.jpg" alt="Glass item">
                 <h1>Thicklady</h1>
                 <p class="price">75,95€</p>
                 <p>Klassinen maalauksen paras puoli, neoFlex-lasia ja upeat yksityskohdat.</p>
-                <button class="atc 6">Add to Cart</button>
+                <button class="atc 6" id="teksti">Add to Cart</button>
               </div>
 
   </div>
@@ -177,11 +178,11 @@
     <a class="pohjalinkit" href="img/rickroll.gif">Ota yhteyttä</a>
     <a class="pohjalinkit" href="img/rickroll.gif">Takuu</a>
     <a class="pohjalinkit" href="img/rickroll.gif">Osallistu kurssille</a>
-  </div>
 </div>
-
 
 <script src="./yritys.js"></script>
 </body>
+
+
 
 </html>
